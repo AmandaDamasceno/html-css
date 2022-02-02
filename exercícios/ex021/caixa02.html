@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(105, 105, 105, 0.342);
+            margin: 0px;
+        }
+
+        header {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: 2px 1px 14px 6px  rgba(0, 0, 0, 0.116);
+        }
+        
+        nav {
+            background-color: chartreuse;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.315); /* SEGIUNDO A ORDEM: deslocamento horizontal; deslocamento vertical; espalhamento; sombra  --- SEGUIR ESSA ORDEM SEMPRE QUE FOR TRABALHAR COM SOMBRA */
+        }
+
+        nav > a {
+            text-decoration: none; /* PARA TIRAR O SUBLINHADO DOS LINKS*/
+            color: red;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /*PARA QUANDO APSSA RO MOUSE EM CIMA*/
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /* RAIO DA BORDA (arredondamento) */
+            box-shadow: 7px 9px 10px 4px rgba(0, 0, 0, 0.281);
+        }
+
+        article {
+            background-color: rgba(165, 42, 42, 0.568);
+            padding: 2px;
+        }
+
+        article > aside {
+            text-align: center;
+            color: aqua;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        
+        footer > p {
+            color: rgb(248, 108, 183);
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%; /* COM ESSA LINHA FOI CRIADO UM CÍRCULO */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>  <!-- <nav> NAVEGAÇÃO PARA MENU-->
+        
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>     
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Como jejuar corretamente de acordo com a Bíblia</p>
+        </section>
+        <section id="noticias">
+
+        </section>
+        <article>
+            <h2>Versículo do dia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex provident, corrupti asperiores quas deleniti repudiandae? Doloribus corrupti pariatur eligendi! Velit expedita qui praesentium nobis repudiandae. Reprehenderit qui molestiae debitis.</p>
+            <aside>
+                <p>Artigo escrito pot King James</p>
+            </aside>
+        </article>
+        <article>
+
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Amanda Damasceno</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

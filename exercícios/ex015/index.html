@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Externos</title>
+    <!--ESTILO CSS EXTERNO-->
+    <link rel="stylesheet" href="style.css"> <!--TAMBÉM PODE HAVER VARIAÇÃO NO SENTIDO DE HAVER MAIS DE UM TIPO DE ESTILO NA PÁGINA, ALÉM DO ESTILO EXTERNO (COMO PODEMOS VÊ ACIMA, USOU-SE O <LINK..... ABAIXO USOU-SE O <STYLE.... QUE É O ESTILO INTERNO)-->
+       
+    <!--ESTILO CSS INTERNO-->
+    <style> 
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+</head> 
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet expedita similique quod nulla magni, unde veniam minima maxime iste at, ratione saepe iure fugiat, molestiae qui quisquam debitis. Necessitatibus!</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eius iure ipsa, corporis nesciunt labore assumenda laudantium fuga nemo ullam tenetur quod vitae quas quibusdam consectetur expedita, saepe ad. Commodi?</p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium amet laboriosam, officia culpa sed blanditiis corporis temporibus sunt. Aliquam perferendis autem libero placeat quibusdam porro. Est corporis dolorum iure fugit!</p> 
+    
+    <!--AQUI É O LINK PARA A PÁGINA 2-->   <!--ESTILO CSS INLINE-->              
+    <p style="text-align: right;"><a href="pagina02.html" target="_self">Ir para a página 2</a></p> <!--DIGAMOS QUE O MEU CLIENTE DESEJE MUDAR ESSE LINK DA LINHA ABAIXO PARA A DIREITA DA PÁGINA, ENTÃO FICA DESSA FORMA ACIMA, ACRESCENTANDO SYTLE NO <p>-->
+    
+    <!--RESUMINDO: NO MESMO ARQUIVO POSSO USAR CSS INLINE, CSS INTERNO E CSS EXTERNO.-->
+</body>
+</html>

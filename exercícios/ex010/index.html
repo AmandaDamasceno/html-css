@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://colaboraread.com.br/login/auth" target="_blank" rel="external">Colaborar - AVA</a></p>
+    <p>Você também pode acessar o meu <a href="https://replit.com/@AmandaDamasceno" target="_blank" rel="external">Replit</a></p>
+
+
+    
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/A parte do mau - Jonathan Edwards - 1735.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!-- type="application/pdf" não serve, pois o navegador abre o arquivo PFD e não o baixa. Só usei porque o professor ensinou assim-->
+        <li><a href="livro/A parte do mau - Jonathan Edwards - 1735.zip" download="livro/A parte do mau - Jonathan Edwards - 1735.zip" type="application/zip">Livro compactado em ZIP</a></li> <!--download="livro/A parte do mau - Jonathan Edwards - 1735.zip" - type="application/zip" - Só coloquei, porque o professor assim ensinou, porém fiz testes e descrobri que o download baixa sem precisar desses parâmetros.      LEMBRANDO QUE ESTOU USANDO O NAVEGADOR GOOGLE-->
+    </ul>
+</body>
+</html>

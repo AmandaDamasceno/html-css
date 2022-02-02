@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {  /*    Elemento do tipo BOX-LEVEL    */
+
+           background-color: lightgray;
+           height: 300px;
+           width: 300px;
+
+           /* ESSA É A FORMA MAIS DETALHADA PARA APLICAR OS BORDER.
+           border-width: 10px;
+           border-style: solid;
+           border-color: darkslategrey;*/
+
+            border: 10px solid darkslategrey; /* ESSA É A FORMA SIMPLIFICADA -- border com shorthand*/
+
+           /* ESSA É A FORMA MAIS DETALHADA PARA APLICAR OS PADDING
+           padding-top: 10px;    - Em cima
+           padding-right: 10px;  - À direita
+           padding-bottom: 10px; - Em baixo
+           padding-left: 10px;   - À esqeurda 
+           */
+
+            padding: 10px; /* COMO TODOS OS PADDING SÃO 10 PX, ENTÃO NÃO PRECISA REPETIR, MAS USAR SOMENTE 1. 
+            ISSO PORQUE TODOS OS PX SÃO IGUAIS  -- padding com shorthand*/
+
+          /* margin: auto;  Para centralizar a margem da caixa, deixando no meio   ------   Text-align: center; Para centralizar um texto*/
+
+           /* FORMA DETALHADA, QUE NAO DEIXA DE TÁ CERTO, MAS LOGO ABAIXO COM O SHORTHAND FICA MAIS SIMPLIFICADO
+           margin-top: 20px;
+           margin-right: 20px;
+           margin-bottom: 40px;
+           margin-left: 20px;*/
+
+           margin: 20px auto 40px auto; /* FORMA SIMPLIFICADA DE APLICAR AS MARGIN --- margin com shorthand*/
+
+           /* FORMA DETALHADA, QUE NAO DEIXA DE TÁ CERTO, MAS LOGO ABAIXO COM O SHORTHAND FICA MAIS SIMPLIFICADO
+           outline-width: 5px;
+           outline-style: dashed;
+           outline-color: salmon; */
+
+           outline: 5px dashed salmon; /* FORMA SIMPLIFICADA DE APLICAR OUTLINE --- outline com shorthand*/
+        
+        }
+
+        a {    /*   Elemento do tipo INLINE-LEVEL     */
+ 
+            /* AQUI VOU USAR O SHOTHAND DA MESMA FOMA QUE NAS LINHAS ACIMA
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;*/
+
+            border: 10px solid red; /* border com shothand */
+
+            /*padding-top: 10px; - Em cima
+           padding-right: 10px;  - À direita
+           padding-bottom: 10px; - Em baixo
+           padding-left: 10px;   - À esqeurda */
+
+           padding: 10px;  /* padding com shorthand */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
